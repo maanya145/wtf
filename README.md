@@ -1,7 +1,6 @@
 # WTF - ITUS102: Web Technology Framework
 
-Lab work for **ITUS102: Web Technology Framework**, Semester 1, Faculty of Technology, CHARUSAT.
-
+Lab work for **ITUS102: Web Technology Framework**, Semester 1
 Each practical folder holds the main implementation, and a `supplementary/` folder holding the solutions to the supplementary problems for that practical. The write-ups for each practical are in `docs/`.
 
 ## Objective
