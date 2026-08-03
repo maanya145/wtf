@@ -1,0 +1,97 @@
+body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fdf6f0;
+            color: #333333;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #b3541e;
+            color: white;
+            text-align: center;
+            padding: 25px 20px;
+        }
+
+        header p {
+            color: #fbe9dc;
+        }
+
+        nav {
+            background-color: #8a3d13;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 8px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: #b3541e;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        section, aside {
+            background-color: white;
+            border: 1px solid #f0ded0;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #b3541e;
+            border-bottom: 2px solid #e8b891;
+            padding-bottom: 6px;
+        }
+
+        .banner {
+            background-color: #d97a34;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            padding: 40px 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #f2d9c4;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #fbe9dc;
+        }
+
+        footer {
+            background-color: #8a3d13;
+            color: #fbe9dc;
+            text-align: center;
+            padding: 15px;
+        }

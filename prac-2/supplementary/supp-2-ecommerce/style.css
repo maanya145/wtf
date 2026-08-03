@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f5fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3b2c6a;
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #d3caee;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid #5b4a92;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #4c3b85;
+    border-color: #ffffff;
+}
+
+.banner {
+    background-color: #3b2c6a;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.banner h2 {
+    color: #ffc94d;
+    border-bottom: none;
+    font-size: 26px;
+}
+
+.banner p {
+    font-size: 17px;
+    color: #d3caee;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #3b2c6a;
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid #ffc94d;
+    padding-bottom: 6px;
+}
+
+h3 {
+    color: #3b2c6a;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+/* Promotional banners laid out with Flexbox */
+.promo-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.promo-box {
+    flex: 1 1 250px;
+    background-color: #fff8e6;
+    border: 1px solid #f0dfae;
+    border-left: 5px solid #ffc94d;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+/* Category and product listings laid out with CSS Grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.category {
+    background-color: #f0edf8;
+    border: 1px solid #ded7f0;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.category:hover {
+    background-color: #e6e0f5;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #ded7f0;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.thumb {
+    background-color: #e6e0f5;
+    color: #3b2c6a;
+    text-align: center;
+    padding: 40px 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.price {
+    color: #1f7a44;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.old-price {
+    color: #888888;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product button {
+    margin-top: auto;
+    background-color: #3b2c6a;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.product button:hover {
+    background-color: #ffc94d;
+    color: #3b2c6a;
+}
+
+#contact p {
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: #3b2c6a;
+    color: #d3caee;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+
+    .category-grid,
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .category-grid,
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 12px;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .promo-box {
+        flex: 1 1 100%;
+    }
+}
