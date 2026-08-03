@@ -103,6 +103,3 @@ No build step, server, or dependency installation is required, since the project
 - Responsiveness checked using the device toolbar in browser developer tools at desktop, tablet, and mobile widths.
 - Pages verified in at least two modern browsers.
 
-## Author
-
-Maanya | Semester 1 | Faculty of Technology, CHARUSAT
