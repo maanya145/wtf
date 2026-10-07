@@ -52,6 +52,10 @@ function checkLoanEligibility() {
 
     let name = document.getElementById("customerName").value;
 
+    let age = Number(
+        document.getElementById("customerAge").value
+    );
+
     let income = Number(
         document.getElementById("income").value
     );
@@ -62,10 +66,36 @@ function checkLoanEligibility() {
 
 
     // Validation
-    if (name === "" || income <= 0 || loanAmount <= 0) {
+    if (name === "" || age <= 0 || income <= 0 || loanAmount <= 0) {
 
         displayResult(
             "Please enter valid customer and financial information."
+        );
+
+        return;
+    }
+
+
+    // Age eligibility: applicant must be between 18 and 65 years
+    if (age < 18) {
+
+        displayResult(
+            "<h4>Loan Status: Not Eligible</h4>" +
+            "Customer: " + name +
+            "<br>Age: " + age + " years" +
+            "<br>Reason: Applicant must be at least 18 years old."
+        );
+
+        return;
+    }
+
+    if (age > 65) {
+
+        displayResult(
+            "<h4>Loan Status: Not Eligible</h4>" +
+            "Customer: " + name +
+            "<br>Age: " + age + " years" +
+            "<br>Reason: Applicant must not be above 65 years of age."
         );
 
         return;
@@ -94,6 +124,7 @@ function checkLoanEligibility() {
             displayResult(
                 "<h4>Loan Status: Eligible</h4>" +
                 "Customer: " + name +
+                "<br>Age: " + age + " years" +
                 "<br>Eligible for higher loan category."
             );
 
@@ -102,6 +133,7 @@ function checkLoanEligibility() {
             displayResult(
                 "<h4>Loan Status: Eligible</h4>" +
                 "Customer: " + name +
+                "<br>Age: " + age + " years" +
                 "<br>Eligible for standard loan category."
             );
         }
@@ -111,6 +143,7 @@ function checkLoanEligibility() {
         displayResult(
             "<h4>Loan Status: Not Eligible</h4>" +
             "Customer: " + name +
+            "<br>Age: " + age + " years" +
             "<br>Please increase your income or reduce the loan amount."
         );
     }
